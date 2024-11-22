@@ -1,0 +1,67 @@
+/* Grundlegende Stile für die Uhr */
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+  background-color: white;
+}
+
+.outer-clock-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.inner-clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.marking {
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background-color: black;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.marking-one { transform: translateX(-50%) rotate(0deg); }
+.marking-two { transform: translateX(-50%) rotate(90deg); }
+.marking-three { transform: translateX(-50%) rotate(180deg); }
+.marking-four { transform: translateX(-50%) rotate(270deg); }
+
+/* Die Zeiger */
+.hand {
+  position: absolute;
+  width: 4px;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  transition: transform 0.1s;
+}
+
+.hour-hand {
+  height: 50px;
+  background-color: black;
+}
+
+.min-hand {
+  height: 70px;
+  background-color: rgb(0, 0, 0);
+}
+
+.second-hand {
+  height: 120px;
+  background-color: rgb(115, 115, 115);
+}
