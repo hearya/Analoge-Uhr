@@ -1,14 +1,21 @@
 /* Basic styles for the clock */
 .clock {
-  top: 200px; /* Position from top */
-  width: 300px; /* Clock size */
+  top: 200px;
+  /* Position from top */
+  width: 300px;
+  /* Clock size */
   height: 300px;
-  border: 10px solid black; /* Border */
-  border-radius: 50%; /* Circular shape */
+  border: 10px solid black;
+  /* Border */
+  border-radius: 50%;
+  /* Circular shape */
   position: relative;
-  margin: 50px auto; /* Center horizontally */
-  background-color: rgb(230, 243, 252); /* Background color */
-  box-shadow: 0 9px 16px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  margin: 50px auto;
+  /* Center horizontally */
+  background-color: rgb(230, 243, 252);
+  /* Background color */
+  box-shadow: 0 9px 16px rgba(0, 0, 0, 0.3);
+  /* Shadow effect */
 }
 
 .outer-clock-face {
@@ -17,7 +24,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50%; /* Circular shape */
+  border-radius: 50%;
+  /* Circular shape */
 }
 
 .inner-clock-face {
@@ -34,13 +42,15 @@
   left: 50%;
   transform-origin: bottom center;
   transform: rotate(0deg);
-  transition: transform 0.1s; /* Smooth transition for rotation */
+  transition: transform 0.1s;
+  /* Smooth transition for rotation */
 }
 
 .hour-hand {
   height: 85px;
   width: 7px;
-  box-shadow: 0 9px 16px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  box-shadow: 0 9px 16px rgba(0, 0, 0, 0.3);
+  /* Shadow effect */
 }
 
 .min-hand {
@@ -53,7 +63,8 @@
 .second-hand {
   height: 130px;
   width: 3.5px;
-  background-color: rgb(192, 37, 37); /* Red color for seconds */
+  background-color: rgb(192, 37, 37);
+  /* Red color for seconds */
 }
 
 /* The hour Counters */
@@ -61,7 +72,8 @@
   position: absolute;
   width: 9px;
   height: 5.5px;
-  background-color: rgb(57, 57, 57); /* Dark gray color */
+  background-color: rgb(57, 57, 57);
+  /* Dark gray color */
   transform-origin: 50% 50%;
   transform: translate(-50%, -50%);
 }
@@ -92,8 +104,10 @@
   width: 8px;
   height: 25px;
   background-color: black;
-  left: 49.5%; /* Center horizontally */
-  top: -2.5px; /* Adjust vertical position */
+  left: 49.5%;
+  /* Center horizontally */
+  top: -2.5px;
+  /* Adjust vertical position */
   transform-origin: 50% 100%;
   transform: rotate(0deg);
 }
@@ -125,10 +139,14 @@
   width: 8px;
   height: 25px;
   background-color: black;
-  left: 6.5%; /* Center horizontally */
-  top: 125px; /* Adjust vertical position */
-  transform-origin: 50% 100%; /* Pin the origin point */
-  transform: rotate(270deg); /* No rotation */
+  left: 6.5%;
+  /* Center horizontally */
+  top: 125px;
+  /* Adjust vertical position */
+  transform-origin: 50% 100%;
+  /* Pin the origin point */
+  transform: rotate(270deg);
+  /* No rotation */
 }
 
 .dot-marking {
@@ -138,6 +156,83 @@
   left: 10%;
   top: 120px;
   background-color: rgb(203, 0, 0);
-  border-radius: 50%; /* Circular shape */
+  border-radius: 50%;
+  /* Circular shape */
   transform: translate(-50%, -50%);
+}
+
+/* Basis-Stile für größere Bildschirme */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1 1 300px;
+  /* Jedes Element hat eine Basisbreite von 300px, aber kann sich ausdehnen */
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries für kleinere Bildschirme */
+
+/* Smartphones im Hochformat */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* Kleinere Schrift für kleine Bildschirme */
+  }
+
+  .container {
+    flex-direction: column;
+    /* Die Items stapeln sich untereinander */
+  }
+
+  .item {
+    flex: 1 1 100%;
+    /* Jedes Item nimmt 100% der Breite des Containers ein */
+  }
+}
+
+/* Tablets und größere Smartphones */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    /* Mittlere Schriftgröße für größere Smartphones */
+  }
+
+  .container {
+    flex-direction: row;
+    /* Items in einer Zeile */
+  }
+
+  .item {
+    flex: 1 1 48%;
+    /* Jedes Item nimmt 48% der Breite des Containers ein */
+  }
+}
+
+/* Für sehr große Bildschirme (z.B. Desktops) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+    /* Größere Schrift für große Bildschirme */
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Vier gleichmäßige Spalten */
+  }
 }
