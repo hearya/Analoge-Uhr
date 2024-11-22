@@ -1,22 +1,30 @@
-Hier habe ich eine Analog Uhr erstellt mit einem vorgegebennen html, den man nicht endern durfte.
+<h1>Analog Uhr</h1>
+In diesem Projekt wurde eine analoge Uhr erstellt, die die aktuelle Zeit anzeigt. Das HTML-File durfte nicht verändert werden, und alle Funktionalitäten wurden ausschliesslich über CSS und JavaScript implementiert.
 
-Diese Uhr Zeigt die aktuelle Uhrzeit an mit Stunden, Minuten und Sekunden.
-
-Folgende Punkte wurden bewertet:
-
-
-Die Uhr hat drei Zeiger und zeigt die aktuelle Zeit korrekt an 🕰️
+<h3>Funktionen der Uhr</h3>
+Aktuelle Uhrzeit anzeigen: Die Uhr zeigt korrekt die Stunden, Minuten und Sekunden an.
+Drei Zeiger:
 Stundenzeiger
 Minutenzeiger
 Sekundenzeiger
-Der Sekundenzeiger ändert seine Position gemäss der aktuellen Zeit
-Das HTML-File darf NICHT verändert werden
-Die Uhr soll responsiv sein 📱
-Das CSS- und JS-File soll gut, verständlich und angemessen dokumentiert sein 📓
-Der Code soll nach geltenden Standards formatiert werden (https://www.w3schools.com/js/js_conventions.asp)
-Bis auf sichtbare Textausgaben soll der Code internationalen Standards folgend und englisch sein
-Das Projekt wurde auf github commited, der Link zum Repository ist in einem TXT-File mit dem Namen github-repo.txt vermerkt
-Die github-repo.txt-Datei ist ebenfalls Teil des ZIP-Ordners, welcher abgegeben wird
-Aufgrund der Publizierung auf github ist eine readme.md-Datei angelegt, welche das Projekt beschreibt
-Die readme.md-Datei ist ebenfalls Teil des ZIP-Ordners, welcher abgegeben wird
-Das github-Repository ist public
+Der Sekundenzeiger bewegt sich dynamisch gemäss der aktuellen Zeit.
+Anforderungen
+Die Uhr erfüllt folgende Anforderungen:
+
+Das HTML-File darf nicht verändert werden.
+Responsivität: Die Uhr ist so gestaltet, dass sie sich an verschiedene Bildschirmgrössen anpasst (z. B. Smartphones, Tablets und Desktops).
+Dokumentation: Das CSS- und JavaScript-File ist gut und verständlich dokumentiert. Alle Kommentare und Beschreibungen wurden so verfasst, dass der Code nachvollziehbar ist.
+Code-Standards: Der Code entspricht den gängigen Standards und ist nach den Konventionen von W3Schools formatiert (JavaScript Coding Conventions).
+Internationaler Standard: Alle Variablennamen und Kommentare im Code sind in Englisch, mit Ausnahme von sichtbaren Textausgaben (z. B. auf der Benutzeroberfläche).
+GitHub-Repository: Das Projekt wurde auf GitHub veröffentlicht und ist öffentlich zugänglich. Der Link zum Repository ist in der Datei github-repo.txt enthalten.
+README-Datei: Eine README.md-Datei beschreibt das Projekt und ist ebenfalls Teil des ZIP-Ordners.
+Projektstruktur
+CSS-Datei: Enthält das Styling für die Uhr und sorgt dafür, dass sie responsiv ist.
+JavaScript-Datei: Verantwortlich für die Funktionalität der Uhr, einschliesslich der Bewegung der Zeiger.
+HTML-Datei: Das vorgegebene HTML-File, das nicht verändert wurde.
+github-repo.txt: Diese Datei enthält den Link zum GitHub-Repository.
+README.md: Diese Datei, die das Projekt beschreibt.
+
+<h5>GitHub Repository</h5>
+Der Link zum öffentlichen GitHub-Repository ist in der Datei github-repo.txt enthalten.
+
