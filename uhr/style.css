@@ -1,5 +1,6 @@
 /* Grundlegende Stile für die Uhr */
 .clock {
+  top: 35;
   width: 300px;
   height: 300px;
   border: 10px solid black;
@@ -42,7 +43,6 @@
 /* Die Zeiger */
 .hand {
   position: absolute;
-  width: 4px;
   background-color: black;
   bottom: 50%;
   left: 50%;
@@ -52,16 +52,19 @@
 }
 
 .hour-hand {
-  height: 50px;
+  height: 85px;
+  width: 5px;
   background-color: black;
 }
 
 .min-hand {
-  height: 70px;
+  height: 100px;
+  width: 5px;
   background-color: rgb(0, 0, 0);
 }
 
 .second-hand {
   height: 120px;
+  width: 3.5px;
   background-color: rgb(115, 115, 115);
 }

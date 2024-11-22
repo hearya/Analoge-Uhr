@@ -7,12 +7,12 @@ function updateClock() {
   
   // Berechne den Sekundenwinkel (jede Sekunde = 6°)
   const seconds = now.getSeconds();
-  const secondsDegrees = (seconds / 60) * 360 + 90; // +90, weil der Startwinkel bei 90° ist
+  const secondsDegrees = (seconds / 6) * 360 + 90; // +90, weil der Startwinkel bei 90° ist
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
   // Berechne den Minutenwinkel (jede Minute = 6°)
   const minutes = now.getMinutes();
-  const minutesDegrees = (minutes / 60) * 360 + 90;
+  const minutesDegrees = (minutes / 6) * 360 + 90;
   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
 
   // Berechne den Stundenwinkel (jede Stunde = 30°)
