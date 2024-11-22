@@ -1,7 +1,7 @@
 # Analog Uhr
 In diesem Projekt wurde eine analoge Uhr erstellt, die die aktuelle Zeit anzeigt. Das HTML-File durfte nicht verändert werden, und alle Funktionalitäten wurden ausschliesslich über CSS und JavaScript implementiert.
 
-### Funktionen der Uhr
+## Funktionen der Uhr
 Aktuelle Uhrzeit anzeigen: Die Uhr zeigt korrekt die Stunden, Minuten und Sekunden an.
 Drei Zeiger:
 Stundenzeiger
